@@ -1,0 +1,23 @@
+{
+  "install": {
+    "include": [
+      "^package\\.json$",
+      "^\\.env$"
+    ],
+  "engines": 
+    { 
+      "node": "10.x" 
+    }
+  },
+  "restart": {
+    "exclude": [
+      "^public/",
+      "^dist/"
+    ],
+    "include": [
+     "\\.js$",
+      "\\.json"
+    ]
+  },
+  "throttle": 90000
+}
